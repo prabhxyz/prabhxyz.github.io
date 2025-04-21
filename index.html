@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prabhdeep singh — portfolio</title>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- loader -->
+  <div id="loader"><span class="dot dot1"></span><span class="dot dot2"></span><span class="dot dot3"></span></div>
+  <div id="cursor"></div>
+
+  <!-- navbar -->
+  <header class="navbar">
+    <a class="brand" href="#home">ps*</a>
+    <nav id="nav-links">
+      <a href="#about">about</a><a href="#xp">experience</a>
+      <a href="#projects">projects</a><a href="#future">future</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <button id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- socials -->
+  <aside class="socials">
+    <a href="https://linkedin.com/in/prabhs07/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/prabhxyz"      target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="mailto:prabhnannu07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  </aside>
+
+  <!-- hero -->
+  <section id="home" class="hero">
+    <picture><img src="images/hero.png" alt="prabhdeep presenting research"></picture>
+    <div class="overlay right">
+      <h1>prabhdeep&nbsp;singh</h1>
+      <h2 id="age-title">ai researcher</h2>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="about" class="wrapper two-col">
+    <div>
+      <h2>quick intro</h2>
+      <p>i’ve always enjoyed math & computers. my interest led me to programming, and eventually <strong>machine learning.</strong></p>
+      <ul class="bullets">
+        <li>grinding math + ml</li><li>ai research @ harvard & cmu</li><li>incoming student @ utoronto</li>
+      </ul>
+    </div>
+    <div class="about-card">
+      <h3>areas i love</h3><p>computer vision, transformers, llms — honestly anything ai.</p>
+      <h3>currently reading</h3><p>spivak calculus · insel linear algebra · awareness by a. de mello</p>
+    </div>
+  </section>
+
+  <!-- research & experience ticker -->
+  <section id="xp" class="ticker-shell">
+    <h2 class="center">research & experience</h2>
+    <div class="ticker" id="xp-ticker">
+      <article class="slide"><img src="images/telesat.jpg"><h3>telesat – radar calibration ai</h3></article>
+      <article class="slide"><img src="images/cmu.png"><h3>cmu – time‑delay neural nets</h3></article>
+      <article class="slide"><img src="images/harvard.png"><h3>harvard med – ai × ophthalmology</h3></article>
+      <article class="slide"><img src="images/consulting.png"><h3>microsoft & google – ai consulting</h3></article>
+      <article class="slide"><img src="images/hack49.jpg"><h3>hack49 – intl. hackathon (1k+ applicants)</h3></article>
+    </div>
+  </section>
+
+  <!-- manual Medium tiles -->
+  <section id="projects" class="wrapper">
+    <h2 class="center">featured writing</h2>
+    <div class="post-strip">
+      <!-- duplicate & customise these blocks -->
+      <a class="post" href="https://medium.com/@prabhs/building-gpt-from-scratch-f069e0e38828" target="_blank">
+        <img src="images/gpt-article.jpg" alt="">
+        <div class="content"><h4>building gpt — from scratch</h4><p>step‑by‑step transformer implementation in pure python & pytorch…</p></div>
+      </a>
+
+      <a class="post" href="https://medium.com/@prabhs/domain-adversarial-neural-networks-dann-explained-92f65d7aa17c" target="_blank">
+        <img src="images/dann.jpg" alt="">
+        <div class="content"><h4>dann — domain‑adversarial nets</h4><p>how to fight dataset shift with gradient reversal and pytorch lightning…</p></div>
+      </a>
+      <!-- add more posts as needed -->
+    </div>
+  </section>
+
+  <!-- future -->
+  <section id="future" class="wrapper two-col">
+    <div>
+      <h2>what’s next?</h2>
+      <p>publishing three papers → fine‑tuning vlms, intra‑op analytics & cornea segmentation.</p><br>
+      <p>also hunting for wild startup problems — if you’re building something audacious, let’s chat.</p>
+    </div>
+    <img class="future-img" src="images/future.jpg" alt="graduation portrait">
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="contact center">
+    <h2>reach out</h2><p>email me → <a href="mailto:prabhnannu07@gmail.com">prabhnannu07@gmail.com</a></p>
+  </section>
+
+  <footer class="center foot">© 2025 prabhdeep singh</footer>
+
+  <!-- scripts -->
+  <script src="js/nav.js"></script>
+  <script src="js/ticker.js"></script>
+</body>
+</html>
