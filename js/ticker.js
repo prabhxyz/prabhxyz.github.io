@@ -1,21 +1,13 @@
-/* ===== infinite ticker powered by JS translateX ===== */
-const track = document.getElementById('xp-ticker');
-
-if (track) {
-  /* duplicate slides until track width ≥ 2×viewport */
-  const firstWidth = track.scrollWidth;
-  while (track.scrollWidth < window.innerWidth * 2) {
-    track.innerHTML += track.innerHTML;
+/* endless horizontal ticker */
+const track=document.getElementById('xp-ticker');
+if(track){
+  const firstW=track.scrollWidth;
+  track.innerHTML+=track.innerHTML;           // duplicate once
+  let x=0,spd=0.35;
+  function move(){
+    x+=spd;if(x>=firstW)x-=firstW;
+    track.style.transform=`translateX(-${x}px)`;
+    requestAnimationFrame(move);
   }
-
-  let offset = 0;
-  const speed = 0.35;   // pixels per frame ≈ 21 px/sec at 60 fps
-
-  function loop() {
-    offset += speed;
-    if (offset >= firstWidth) offset -= firstWidth;  // reset after one original set
-    track.style.transform = `translateX(-${offset}px)`;
-    requestAnimationFrame(loop);
-  }
-  requestAnimationFrame(loop);
+  move();
 }

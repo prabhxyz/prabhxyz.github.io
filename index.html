@@ -7,44 +7,40 @@
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
-
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- soft moving nebula overlay -->
+  <div class="bg-nebula"></div>
+
   <!-- loader -->
   <div id="loader"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-
-  <!-- custom cursor -->
+  <!-- cursor -->
   <div id="cursor"></div>
 
   <!-- navbar -->
   <header class="navbar">
     <a class="brand" href="#home">ps*</a>
     <nav id="nav-links">
-      <a href="#about">about</a>
-      <a href="#xp">experience</a>
-      <a href="#projects">projects</a>
-      <a href="#future">future</a>
-      <a href="#contact">contact</a>
+      <a href="#about">about</a><a href="#xp">experience</a><a href="#projects">projects</a>
+      <a href="#future">future</a><a href="#contact">contact</a>
     </nav>
-    <button id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+    <button id="hamburger"><span></span><span></span><span></span></button>
   </header>
 
   <!-- socials -->
   <aside class="socials">
     <a href="https://linkedin.com/in/prabhs07/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/prabhxyz"       target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://github.com/prabhxyz" target="_blank"><i class="fa-brands fa-github"></i></a>
     <a href="mailto:prabhnannu07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
   </aside>
 
   <!-- hero -->
   <section id="home" class="hero">
-    <picture><img src="images/hero.png" alt="prabhdeep presenting research"></picture>
+    <img src="images/hero.png" alt="prabhdeep presenting research">
     <div class="overlay right">
       <h1>prabhdeep singh</h1>
       <h2 id="age-title">ai researcher</h2>
@@ -57,63 +53,58 @@
       <h2>quick intro</h2>
       <p>i’ve always enjoyed math & computers. my interest led me to programming, and eventually <strong>machine learning.</strong></p>
       <ul class="bullets">
-        <li>grinding math + ml</li>
-        <li>ai research @ harvard & cmu</li>
-        <li>incoming student @ utoronto</li>
+        <li>grinding math + ml</li><li>ai research @ harvard & cmu</li><li>incoming student @ utoronto</li>
       </ul>
     </div>
-
     <div class="about-card">
-      <h3>areas i love</h3>
-      <p>computer vision, transformers, llms — honestly anything ai.</p>
-      <h3>currently reading</h3>
-      <p>spivak calculus · insel linear algebra · awareness by a. de mello</p>
-      <h3>hobbies</h3>
-      <p>wrestling · gym · music · math · anime <em>(lol)</em></p>
+      <h3>areas i love</h3><p>computer vision, transformers, llms — anything ai.</p>
+      <h3>currently reading</h3><p>spivak calculus · insel linear algebra · awareness by a. de mello</p>
     </div>
   </section>
 
-  <!-- research & experience ticker -->
+  <!-- research & experience -->
   <section id="xp" class="ticker-shell">
     <h2 class="center">research & experience</h2>
-
     <div class="ticker" id="xp-ticker">
-      <article class="slide"><img src="images/telesat.jpg"><h3>telesat – radar calibration ai</h3></article>
-      <article class="slide"><img src="images/cmu.png"><h3>cmu – time‑delay neural nets</h3></article>
-      <article class="slide"><img src="images/harvard.png"><h3>harvard med – ai × ophthalmology</h3></article>
-      <article class="slide"><img src="images/consulting.png"><h3>microsoft & google – ai consulting</h3></article>
-      <article class="slide"><img src="images/hack49.jpg"><h3>hack49 – intl. hackathon (1k+ applicants)</h3></article>
+      <article class="slide">
+        <img src="images/telesat.jpg">
+        <div class="info"><h3>telesat – radar calibration ai</h3><p>attention models to clean low‑orbit radar feeds</p></div>
+      </article>
+      <article class="slide">
+        <img src="images/cmu.png">
+        <div class="info"><h3>cmu – time‑delay neural nets</h3><p>ultra‑low‑latency acoustic modelling research</p></div>
+      </article>
+      <article class="slide">
+        <img src="images/harvard.png">
+        <div class="info"><h3>harvard med – ai × ophthalmology</h3><p>predicting pco risk directly from surgery video</p></div>
+      </article>
+      <article class="slide">
+        <img src="images/consulting.png">
+        <div class="info"><h3>microsoft & google – ai consulting</h3><p>llm pipelines saving multi‑million ad dollars</p></div>
+      </article>
+      <article class="slide">
+        <img src="images/hack49.jpg">
+        <div class="info"><h3>hack49 – intl. hackathon</h3><p>co‑founded event with 1k + global applicants</p></div>
+      </article>
     </div>
   </section>
 
-  <!-- manual Medium tiles -->
+  <!-- featured writing -->
   <section id="projects" class="wrapper">
     <h2 class="center">featured writing</h2>
-
-    <div class="post-strip">
-      <!-- duplicate & edit these as needed -->
-      <a class="post" href="https://medium.com/@prabhs./building-gpt-from-scratch-f24df39c5ac8" target="_blank">
-        <img src="images/gpt-article.png" alt="">
-        <div class="content">
-          <h4>building gpt — from scratch</h4>
-          <p>rebuilding the nitty-gritty of language models and transformers...</p>
-        </div>
+    <div class="post-grid">
+      <!-- up to four links -->
+      <a class="post" href="#" target="_blank">
+        <img src="images/gpt-article.jpg"><div class="content"><h4>building gpt — from scratch</h4><p>step‑by‑step transformer build…</p></div>
       </a>
-
-      <a class="post" href="https://medium.com/@prabhs./domain-adversarial-neural-networks-dann-explained-f73c9740ff49" target="_blank">
-        <img src="images/dann.png" alt="">
-        <div class="content">
-          <h4>domain-adversarial neural networks (DANN) — explained.</h4>
-          <p>my learnings on DANN which introduces a new unsupervised domain adaption technique...</p>
-        </div>
+      <a class="post" href="#" target="_blank">
+        <img src="images/dann.jpg"><div class="content"><h4>dann — domain‑adversarial nets</h4><p>fighting dataset shift …</p></div>
       </a>
-
-      <a class="post" href="https://medium.com/@prabhs./creating-a-frame-interpolation-model-from-scratch-using-convolutional-fusion-upsampling-5d0ed70a4447" target="_blank">
-        <img src="images/fim.png" alt="">
-        <div class="content">
-          <h4>creating a frame interpolation model from scratch.</h4>
-          <p>how I managed to to create a frame interpolation model, all from scratch...</p>
-        </div>
+      <a class="post" href="#" target="_blank">
+        <img src="images/wildfire.jpg"><div class="content"><h4>wildfire spread prediction</h4><p>decade of nasa data …</p></div>
+      </a>
+      <a class="post" href="#" target="_blank">
+        <img src="images/frame-interp.jpg"><div class="content"><h4>frame interpolation via conv‑fusion</h4><p>cnn upsampling trick …</p></div>
       </a>
     </div>
   </section>
@@ -122,21 +113,19 @@
   <section id="future" class="wrapper two-col">
     <div>
       <h2>what’s next?</h2>
-      <p>publishing three papers → fine‑tuning vlms, intra‑op analytics & cornea segmentation.</p><br>
-      <p>also hunting for wild startup problems — if you’re building something audacious, let’s chat.</p>
+      <p>publishing three papers → vlms, intra‑op analytics & cornea segmentation.</p><br>
+      <p>hunting for audacious startup problems — let’s chat.</p>
     </div>
-    <img class="future-img" src="images/future.jpg" alt="graduation portrait">
+    <img class="future-img" src="images/future.jpg" alt="">
   </section>
 
   <!-- contact -->
   <section id="contact" class="contact center">
-    <h2>reach out</h2>
-    <p>email me → <a href="mailto:prabhnannu07@gmail.com">prabhnannu07@gmail.com</a></p>
+    <h2>reach out</h2><p>email → <a href="mailto:prabhnannu07@gmail.com">prabhnannu07@gmail.com</a></p>
   </section>
 
-  <footer class="center foot">©2025 Prabhdeep Singh</footer>
+  <footer class="center foot">© 2025 prabhdeep singh</footer>
 
-  <!-- scripts -->
   <script src="js/nav.js"></script>
   <script src="js/ticker.js"></script>
 </body>
