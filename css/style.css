@@ -159,6 +159,33 @@ h3{font-size:1rem;margin:.6rem 0 .2rem}
 @media(max-width:780px){
   .future-img{justify-self:center;margin-top:2rem}
 }
+@media (max-width: 900px){      /* same breakpoint where post‑grid switches to 2‑columns */
+  .future-img{
+    display:none;
+  }
+}
+/* make the post grid behave like a responsive flex‑row with fixed breakpoints */
+.post-grid{
+  display:flex;               /* instead of CSS‑grid for this behaviour      */
+  flex-wrap:wrap;
+  gap:1.5rem;
+}
+
+/* 4 cards per row on ≥1200 px */
+@media (min-width:1200px){
+  .post{flex:0 1 calc(25% - 1.5rem);}   /* 100/4 minus the gap */
+}
+
+/* 2 cards per row between 600 – 1199 px */
+@media (min-width:600px) and (max-width:1199px){
+  .post{flex:0 1 calc(50% - 1.5rem);}
+}
+
+/* 1 card per row on <600 px */
+@media (max-width:599px){
+  .post{flex:0 1 100%;}
+}
+
 
 /* ===== contact ===== */
 .contact{padding:4rem 1rem}
