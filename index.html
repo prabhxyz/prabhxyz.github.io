@@ -5,28 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>prabhdeep singh — portfolio</title>
 
-  <!-- fonts -->
+  <!-- fonts & icons -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
-  <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- soft moving nebula overlay -->
+  <!-- animated background -->
   <div class="bg-nebula"></div>
 
   <!-- loader -->
   <div id="loader"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-  <!-- cursor -->
+
+  <!-- custom cursor -->
   <div id="cursor"></div>
 
-  <!-- navbar -->
+  <!-- ===== navbar ===== -->
   <header class="navbar">
     <a class="brand" href="#home">ps*</a>
     <nav id="nav-links">
-      <a href="#about">about</a><a href="#xp">experience</a><a href="#projects">projects</a>
-      <a href="#future">future</a><a href="#contact">contact</a>
+      <a href="#about">about</a>
+      <a href="#xp">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#future">future</a>
+      <a href="#contact">contact</a>
     </nav>
     <button id="hamburger"><span></span><span></span><span></span></button>
   </header>
@@ -34,83 +38,94 @@
   <!-- socials -->
   <aside class="socials">
     <a href="https://linkedin.com/in/prabhs07/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/prabhxyz" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://github.com/prabhxyz"       target="_blank"><i class="fa-brands fa-github"></i></a>
     <a href="mailto:prabhnannu07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
   </aside>
 
-  <!-- hero -->
+  <!-- ===== hero ===== -->
   <section id="home" class="hero">
-    <img src="images/hero.png" alt="prabhdeep presenting research">
+    <img src="images/hero.png" alt="">
     <div class="overlay right">
       <h1>prabhdeep singh</h1>
       <h2 id="age-title">ai researcher</h2>
     </div>
   </section>
 
-  <!-- about -->
+  <!-- ===== about ===== -->
   <section id="about" class="wrapper two-col">
     <div>
       <h2>quick intro</h2>
       <p>i’ve always enjoyed math & computers. my interest led me to programming, and eventually <strong>machine learning.</strong></p>
       <ul class="bullets">
-        <li>grinding math + ml</li><li>ai research @ harvard & cmu</li><li>incoming student @ utoronto</li>
+        <li>grinding math + ml</li>
+        <li>ai research @ harvard & cmu</li>
+        <li>incoming student @ utoronto</li>
       </ul>
     </div>
     <div class="about-card">
-      <h3>areas i love</h3><p>computer vision, transformers, llms — anything ai.</p>
-      <h3>currently reading</h3><p>spivak calculus · insel linear algebra · awareness by a. de mello</p>
+      <h3>areas i love</h3>
+      <p>computer vision, transformers, llms — anything ai.</p>
+      <h3>currently reading</h3>
+      <p>spivak calculus · insel linear algebra · awareness by a. de mello</p>
     </div>
   </section>
 
-  <!-- research & experience -->
+  <!-- ===== research & experience ===== -->
   <section id="xp" class="ticker-shell">
+  <center>
     <h2 class="center">research & experience</h2>
+  </center>
     <div class="ticker" id="xp-ticker">
       <article class="slide">
-        <img src="images/telesat.jpg">
-        <div class="info"><h3>telesat – radar calibration ai</h3><p>attention models to clean low‑orbit radar feeds</p></div>
+        <img src="images/telesat.jpg"><div class="info">
+        <h3>telesat – radar calibration ai</h3><p>attention models to clean low‑orbit radar feeds</p></div>
       </article>
       <article class="slide">
-        <img src="images/cmu.png">
-        <div class="info"><h3>cmu – time‑delay neural nets</h3><p>ultra‑low‑latency acoustic modelling research</p></div>
+        <img src="images/cmu.png"><div class="info">
+        <h3>cmu – time‑delay neural nets</h3><p>ultra‑low‑latency acoustic modelling research</p></div>
       </article>
       <article class="slide">
-        <img src="images/harvard.png">
-        <div class="info"><h3>harvard med – ai × ophthalmology</h3><p>predicting pco risk directly from surgery video</p></div>
+        <img src="images/harvard.png"><div class="info">
+        <h3>harvard med – ai × ophthalmology</h3><p>predicting pco risk from surgery video</p></div>
       </article>
       <article class="slide">
-        <img src="images/consulting.png">
-        <div class="info"><h3>microsoft & google – ai consulting</h3><p>llm pipelines saving multi‑million ad dollars</p></div>
+        <img src="images/consulting.png"><div class="info">
+        <h3>microsoft & google – ai consulting</h3><p>llm pipelines saving ad‑ops millions</p></div>
       </article>
       <article class="slide">
-        <img src="images/hack49.jpg">
-        <div class="info"><h3>hack49 – intl. hackathon</h3><p>co‑founded event with 1k + global applicants</p></div>
+        <img src="images/hack49.jpg"><div class="info">
+        <h3>hack49 – intl. hackathon</h3><p>co‑founded event with 1k + applicants</p></div>
       </article>
     </div>
   </section>
 
-  <!-- featured writing -->
+  <!-- ===== featured writing ===== -->
   <section id="projects" class="wrapper">
+    <center>
     <h2 class="center">featured writing</h2>
+  </center>
     <div class="post-grid">
-      <!-- up to four links -->
-      <a class="post" href="#" target="_blank">
-        <img src="images/gpt-article.jpg"><div class="content"><h4>building gpt — from scratch</h4><p>step‑by‑step transformer build…</p></div>
+      <a class="post" href="#">
+        <img src="images/gpt-article.jpg">
+        <div class="content"><h4>building gpt — from scratch</h4><p>step‑by‑step transformer build…</p></div>
       </a>
-      <a class="post" href="#" target="_blank">
-        <img src="images/dann.jpg"><div class="content"><h4>dann — domain‑adversarial nets</h4><p>fighting dataset shift …</p></div>
+      <a class="post" href="#">
+        <img src="images/dann.jpg">
+        <div class="content"><h4>dann — domain‑adversarial nets</h4><p>fighting dataset shift …</p></div>
       </a>
-      <a class="post" href="#" target="_blank">
-        <img src="images/wildfire.jpg"><div class="content"><h4>wildfire spread prediction</h4><p>decade of nasa data …</p></div>
+      <a class="post" href="#">
+        <img src="images/wildfire.jpg">
+        <div class="content"><h4>wildfire spread prediction</h4><p>decade of nasa data …</p></div>
       </a>
-      <a class="post" href="#" target="_blank">
-        <img src="images/frame-interp.jpg"><div class="content"><h4>frame interpolation via conv‑fusion</h4><p>cnn upsampling trick …</p></div>
+      <a class="post" href="#">
+        <img src="images/frame-interp.jpg">
+        <div class="content"><h4>frame interpolation via conv‑fusion</h4><p>cnn upsampling trick …</p></div>
       </a>
     </div>
   </section>
 
-  <!-- future -->
-  <section id="future" class="wrapper two-col">
+  <!-- ===== future ===== -->
+  <section id="future" class="wrapper two-col align-center">
     <div>
       <h2>what’s next?</h2>
       <p>publishing three papers → vlms, intra‑op analytics & cornea segmentation.</p><br>
@@ -119,12 +134,15 @@
     <img class="future-img" src="images/future.jpg" alt="">
   </section>
 
-  <!-- contact -->
-  <section id="contact" class="contact center">
-    <h2>reach out</h2><p>email → <a href="mailto:prabhnannu07@gmail.com">prabhnannu07@gmail.com</a></p>
+  <!-- ===== contact ===== -->
+  <section id="contact" class="contact">
+    <div class="inner">
+      <h2>reach out</h2>
+      <p>email → <a class="blue-link" href="mailto:prabhnannu07@gmail.com"><strong style="color: lightblue;">prabhnannu07@gmail.com</strong></a></p>
+    </div>
   </section>
 
-  <footer class="center foot">© 2025 prabhdeep singh</footer>
+  <footer class="foot">© <span id="year"></span> Prabhdeep Singh — All rights reserved.</footer>
 
   <script src="js/nav.js"></script>
   <script src="js/ticker.js"></script>
