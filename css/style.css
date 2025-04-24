@@ -244,3 +244,23 @@ a:hover ~ #cursor,button:hover ~ #cursor,#hamburger:hover ~ #cursor{
 @media(max-width:720px){
   .navbar{display:none}
 }
+
+/* ===== scroll-down cue ===== */
+.scroll-down{
+  position:absolute;
+  bottom:2rem;left:50%;
+  transform:translateX(-50%);
+  font-size:1.6rem;
+  color:var(--blue2);
+  animation:bounceY 2s infinite;
+  cursor:pointer;
+  z-index:5;
+}
+@keyframes bounceY{
+  0%,100%{transform:translate(-50%,0)}
+  50%    {transform:translate(-50%,10px)}
+}
+/* hide cue on touch devices */
+@media(pointer:coarse){
+  .scroll-down{display:none}
+}
