@@ -235,3 +235,12 @@ a:hover ~ #cursor,button:hover ~ #cursor,#hamburger:hover ~ #cursor{
 *::-webkit-scrollbar-thumb{background:var(--blue);border-radius:8px}
 *::-webkit-scrollbar-thumb:hover{background:#3894ff}
 *{scrollbar-width:thin;scrollbar-color:var(--blue) #1d1d1d}
+
+/* ===== cursor hidden on coarse pointers ===== */
+@media (pointer:coarse){
+  #cursor{display:none}
+}
+
+@media(max-width:720px){
+  .navbar{display:none}
+}

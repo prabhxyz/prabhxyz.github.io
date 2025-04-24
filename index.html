@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>prabhdeep singh — ai researcher</title>
+  <title>prabhdeep singh — ai researcher</title>
 
   <!-- fonts & icons -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,20 +20,17 @@
   <!-- loader -->
   <div id="loader"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
 
-  <!-- custom cursor -->
+  <!-- custom cursor (hidden on touch devices) -->
   <div id="cursor"></div>
 
-  <!-- ===== navbar ===== -->
   <header class="navbar">
     <a class="brand" href="#home">prabh*</a>
     <nav id="nav-links">
-      <a href="#about">about</a>
-      <a href="#xp">experience</a>
-      <a href="#projects">projects</a>
-      <a href="#future">future</a>
+      <a href="#about">about</a><a href="#xp">experience</a>
+      <a href="#projects">projects</a><a href="#future">future</a>
       <a href="#contact">contact</a>
     </nav>
-    <button id="hamburger"><span></span><span></span><span></span></button>
+    <button id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
   </header>
 
   <!-- socials -->
@@ -47,7 +44,7 @@
   <section id="home" class="hero">
     <img src="images/hero.png" alt="">
     <div class="overlay right">
-      <h1>prabhdeep singh</h1>
+      <h1>prabhdeep singh</h1>
       <h2 id="age-title">ai researcher</h2>
     </div>
   </section>
@@ -164,7 +161,7 @@
     </div>
   </section>
 
-  <footer class="foot">© <span id="year"></span> Prabhdeep Singh — All rights reserved.</footer>
+  <footer class="foot">© <span id="year"></span> Prabhdeep Singh — All rights reserved.</footer>
 
   <script src="js/nav.js"></script>
   <script src="js/ticker.js"></script>
