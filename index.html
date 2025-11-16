@@ -1,173 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>prabhdeep singh — ai researcher</title>
-
-  <!-- fonts & icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="images/favicon.png">
-
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhdeep Singh</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <main>
+        <div class="container">
 
-  <!-- animated background -->
-  <div class="bg-nebula"></div>
+            <p class="greeting">Hello! 👋</p>
 
-  <!-- loader -->
-  <div id="loader"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            <p>I am Prabhdeep Singh (Prabh). I am a first year student at the University of Toronto planning to study Computer Science, Statistics, and Mathematics.</p>
 
-  <!-- custom cursor (hidden on touch devices) -->
-  <div id="cursor"></div>
+            <p>Most of my time goes into AI research, writing code, and trying to understand why models behave the way they do instead of just taking their answers at face value.</p>
 
-  <header class="navbar">
-    <a class="brand" href="#home">prabh*</a>
-    <nav id="nav-links">
-      <a href="#about">about</a><a href="#xp">experience</a>
-      <a href="#projects">projects</a><a href="#future">future</a>
-      <a href="#contact">contact</a>
-    </nav>
-    <button id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
-  </header>
+            <hr>
 
-  <!-- socials -->
-  <aside class="socials">
-    <a href="https://linkedin.com/in/prabhs07/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/prabhxyz"       target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="mailto:prabhnannu07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-  </aside>
+            <p>Growing up I self-learned a lot through asking the right questions. I never enjoyed school because it felt slow. Self-learning did not.</p>
 
-  <!-- ===== hero ===== -->
-  <section id="home" class="hero">
-    <img src="images/hero.png" alt="">
-    <div class="overlay right">
-      <h1>prabhdeep singh</h1>
-      <h2 id="age-title">ai researcher</h2>
-    </div>
+            <p>When I found online resources I started to teach myself. That same energy moved into math, programming, and later into models and optimization. I got used to building things before I fully understood them, then going back to clean up the theory after.</p>
 
-    <!-- scroll cue -->
-    <div id="scrollDown" class="scroll-down">
-      <i class="fa-solid fa-chevron-down"></i>
-    </div>
-  </section>
-  <!-- ===== about ===== -->
-  <section id="about" class="wrapper two-col">
-    <div>
-      <h2>quick intro</h2>
-      <p>i’ve always enjoyed math & computers. my interest led me to programming, and eventually <strong>machine learning.</strong></p>
-      <ul class="bullets">
-        <li>grinding math + ml</li>
-        <li>ai research @ harvard & cmu</li>
-        <li>incoming student @ utoronto</li>
-      </ul>
-    </div>
-    <div class="about-card">
-      <h3>areas i love</h3>
-      <p>computer vision, transformers, llms — anything ai.</p>
-      <h3>currently reading</h3>
-      <p>spivak calculus · insel linear algebra · awareness by a. de mello</p>
-      <h3>hobbies</h3>
-      <p>wrestling · gym · music · math · anime <em>(lol)</em></p>
-    </div>
-  </section>
+            <p>I fell into AI research because I liked the questions more than the demos. How do models store concepts. Why do some prompts light up entire behaviors. What changes when you push systems to the edge of their comfort zone.</p>
 
-  <!-- ===== research & experience ===== -->
-  <section id="xp" class="ticker-shell">
-  <center>
-    <h2 class="center">research & experience</h2>
-  </center>
-    <div class="ticker" id="xp-ticker">
-      <article class="slide">
-        <img src="images/telesat.jpg"><div class="info">
-        <h3>telesat: improve space object tracking</h3><p>worked with engineers to implement sequential attention mechanisms for space object tracking. presented at canada's national stem fair.</p></div>
-      </article>
-      <article class="slide">
-        <img src="images/cmu.png"><div class="info">
-        <h3>carnegie mellon uni: time‑delay neural nets</h3><p>working on understanding tdnn's, and creating a web demo to show how it works at a mathematical level.</p></div>
-      </article>
-      <article class="slide">
-        <img src="images/harvard.png"><div class="info">
-        <h3>harvard medical school:<br> ai × ophthalmology</h3><p>creating an ai system for temporal inference on cataract surgery videos to assess the risk of posterior capsule opacification development.</p></div>
-      </article>
-      <article class="slide">
-        <img src="images/consulting.png"><div class="info">
-        <h3>ai consulting: google, microsoft, and interac</h3><p>i consulted alongside google, microsoft, and interac, pitching ai-driven strategies to execs, including a $4.41b opportunity for google ads.</p></div>
-      </article>
-      <article class="slide">
-        <img src="images/hack49.jpg"><div class="info">
-        <h3>hack49 – intl. hackathon</h3><p>as co-founder of hack49, i led it to become one of canada’s largest hackathons—reaching 700k+ people, raising $20k, and partnering with global tech leaders like spotify, openbci, and elegoo.</p></div>
-      </article>
-    </div>
-  </section>
+            <p>Along the way I spent time as a research assistant at CMU, then joined a group at MIT CSAIL, and eventually found myself working with the AI Ophthalmology team at Harvard. Each step taught me something different about how real research happens.</p>
 
-  <!-- ===== featured writing ===== -->
-  <section id="projects" class="wrapper">
-    <center>
-    <h2 class="center">featured writing</h2>
-  </center>
-    <div class="post-grid">
-      <a class="post" href="https://medium.com/@prabhs./improving-space-object-tracking-by-calibrating-ground-station-data-using-ai-33dccb84675a" target="_blank">
-        <img src="images/space_m.png" alt="">
-        <div class="content">
-          <h4>calibrating ground-station data using ai.</h4>
-          <p>i developed a way to improve space object tracking by creating a regression model that takes data from 3 different ground-stations...</p>
+            <p>Now I split my time between university, which I will finish very early, research projects, and small projects that test whether my ideas actually.</p> 
+
+            <hr>
+
+            <p>I care about two things at the same time.</p>
+
+            <p>One is depth. I like proofs, weird edge cases, and understanding how far a method can be pushed before it breaks.</p>
+
+            <p>The other is impact. I like when something I built is in a repo that people actually clone, or in a product that someone uses without thinking about the model behind it.</p>
+
+            <p>Long term I want to work on systems that feel like early pieces of whatever comes after today's models, not just slightly better chatbots. I want to be close to the hard engineering and hard science that actually moves the frontier forward.</p>
+
+            <p>I am also moving quickly through my degree and should finish in roughly two and a half years, which gives me more room to dive into serious research when I am done with my undergrad.</p>
+            
+            <hr>
+
+            <p>Some of the work I am proud of looks like this:</p>
+
+            <ul>
+                <li>FETA Transformers - a framework that makes token level adapters behave like LoRA and other parameter efficient methods, with shared theory, training, and a compiler behind it.</li>
+                <li>MeshRAG - a constant time RAG that mixes hashing and graphs so latency stays constant no matter how large the dataset gets.</li>
+                <li>Cornea segmentation and PCO analysis - vision language models that help with cataract surgery workflows, including cornea segmentation and the risk of posterior capsule opacification.</li>
+                <li>IntelliDrive - an LLM controlled RC car built for a hackathon, where the model reasons about any environment and chooses how to drive.</li>
+                <li>Small apps - things like productivity apps and quiz feeds that test how far you can push learning and habit building with a little bit of ML, good UX, and some humor.</li>
+            </ul>
+
+            <p>None of these are perfect, but each one taught me something real about how models fail and how people actually interact with them.</p>
+
+            <hr>
+
+            <p>If any of this sounds interesting and you would like to talk about research, building, or ideas that do not have a name yet, I would be happy to chat.</p>
+
+            <p>I am especially interested in work around model architectures, and tools that make intelligent systems more capable and reliable.
+
+            <p>Email is the best way to reach me: s.prabhdeep[at]mail.utoronto.ca</p>
+
+            <p>You can also find me here:</p>
+
+            <ul>
+                <li>GitHub: <a href="https://github.com/prabhxyz" target="_blank" rel="noopener noreferrer">https://github.com/prabhxyz</a></li>
+                <li>Twitter: <a href="https://x.com/PrabhdeepS_/" target="_blank" rel="noopener noreferrer">https://x.com/PrabhdeepS_/</a></li>
+                <li>ORCID: <a href="https://orcid.org/0009-0009-3329-3595" target="_blank" rel="noopener noreferrer">https://orcid.org/0009-0009-3329-3595</a></li>
+            </ul>
         </div>
-      </a>
+    </main>
 
-      <a class="post" href="https://medium.com/@prabhs./domain-adversarial-neural-networks-dann-explained-f73c9740ff49" target="_blank">
-        <img src="images/dann.png" alt="">
-        <div class="content">
-          <h4>domain-adversarial neural networks (DANN) — explained.</h4>
-          <p>my learnings on DANN which introduces a new unsupervised domain adaption technique...</p>
-        </div>
-      </a>
+    <button id="toggle-mode" aria-label="Toggle dark mode">Toggle mode</button>
 
-      <a class="post" href="https://medium.com/@prabhs./creating-a-frame-interpolation-model-from-scratch-using-convolutional-fusion-upsampling-5d0ed70a4447" target="_blank">
-        <img src="images/fim.png" alt="">
-        <div class="content">
-          <h4>creating a frame interpolation model from scratch.</h4>
-          <p>how I managed to to create a frame interpolation model, all from scratch...</p>
-        </div>
-      </a>
-      <a class="post" href="https://medium.com/@prabhs./building-gpt-from-scratch-f24df39c5ac8" target="_blank">
-        <img src="images/gpt-article.png" alt="">
-        <div class="content">
-          <h4>building gpt — from scratch.</h4>
-          <p>rebuilding the nitty-gritty of language models and transformers...</p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- ===== future ===== -->
-  <section id="future" class="wrapper two-col align-center">
-    <div>
-      <h2>what’s next?</h2>
-      <p>working on three papers, planning on publishing soon</p>
-      <ul class="bullets">
-        <li>auto cornea seg in cataract vids w/ pspnet</li>
-        <li>multimodal op analysis to prevent pco</li>
-        <li>vlm fine-tuning for eye surgeries</li>
-      </ul>
-      <p>hunting for innovative startups / labs — let’s chat.</p>
-    </div>
-    <img class="future-img" src="images/future.jpg" alt="">
-  </section>
-
-  <!-- ===== contact ===== -->
-  <section id="contact" class="contact">
-    <div class="inner">
-      <h2>reach out</h2>
-      <p>email → <a class="blue-link" href="mailto:prabhnannu07@gmail.com"><strong style="color: lightblue;">prabhnannu07@gmail.com</strong></a></p>
-    </div>
-  </section>
-
-  <footer class="foot">© <span id="year"></span> Prabhdeep Singh — All rights reserved.</footer>
-
-  <script src="js/nav.js"></script>
-  <script src="js/ticker.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
